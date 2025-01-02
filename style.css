@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: cursive;
+    user-select: none;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid black;
+    font-family: cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #BD632D;
+    border: 3px solid black;
+    border-radius: 15px;
+    color: white;
+}
+
+#canvas {
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: none;
+}
+
+div.cool {
+    display: flex;
+    align-items: center;
+}
+
+div.cool span {
+    font-size: 20px;
+}
+
+table tr th {
+    border: 4px solid #6e3b1a;
+    border-style: none none solid none;
+}
+table {
+    border: 4px solid #6e3b1a;
+    border-collapse: collapse;
+}
+table tr td {
+    border: 1px solid #6e3b1a;
+    border-style: none none solid solid;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid;
+    border-style: none none solid none;
+    background-color: rgb(205, 205, 205);
+}
+
+input:focus {
+    outline: none;
+}
+
+#howToPlayMenu {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.leaderstyle {
+    display: flex;
+    flex-direction: column;
+    background-color: #BD632D;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#leaderboardMenu {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    text-align: center;
+    color: white;
+}

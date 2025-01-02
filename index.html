@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- menu -->
+    <div id="mainMenu">
+        <h1>Whack the Moles!</h1>
+        <p>v2</p>
+        <img src="moles.png" alt="" width="200">
+        <input type="text" id="inputUsername" placeholder="Enter Username">
+        <button id="btnStart">Start Game</button>
+        <button id="btnHowToPlay">How To Play</button>
+        <button id="btnLeaderboard">Leaderboard</button>
+    </div>
+
+    <!-- leaderboard -->
+    <div id="leaderboardMenu" style="display: none;">
+        <h1 style="color: black;">Leaderboard</h1>
+        <div class="leaderstyle">
+            <table id="scoreTable">
+                <tr>
+                    <th><img src="trophy.svg" alt="" width="50"></th>
+                    <th><img src="user.svg" alt="" width="50"></th>
+                    <th><img src="dizzy_mole.svg" alt="" width="50"></th>
+                </tr>
+            </table>
+        </div>
+        <button id="backtoMenu-leaderboard">Back</button>
+    </div>
+
+    <div id="howToPlayMenu" style="display: none;">
+        <h1>How to play?</h1>
+        <p>Your lawn is destroyed by the naughty moles!</p>
+        <h2>CLICK!</h2>
+        <p>You and your trustworthy hammer should teach them a lesson, just click on the moles that pop out from the ground! (don't worry the hammer is soft.)</p>
+        <p>But becareful though! if you hit anything other than the moles, your hammer will break a little, and eventually you can't use it anymore if it breaks.</p>
+        <h2>HIT AS MANY AS YOU CAN!</h2>
+        <p>The moles will retreat after 30 seconds, make sure to hit as many moles so that they will learn their lesson!</p>
+        <h3>Good luck!</h3>
+        <button id="backToMenu-howtoplay">Back</button>
+    </div>
+
+    <!-- game -->
+    <div id="gameContainer" style="display: none;">
+        <div>
+            <!-- <button id="back">Back</button> -->
+            <div id="stats">
+                <p>
+                    <div class="cool">
+                        <img src="user.svg" alt="" width="30">
+                        <span id="usernameText"></span>
+                    </div>
+                </p>
+                <p>
+                    <div class="cool">
+                        <img src="dizzy_mole.svg" alt="" width="30">
+                        <span id="score">0</span>
+                    </div>
+                </p>
+                <p>
+                    <div class="cool">
+                        <img src="timer.svg" alt="" width="30">
+                        <span id="second">30</span>
+                    </div>
+                </p>
+                <p>
+                    <div class="cool">
+                        <img src="live.svg" alt="" width="30">
+                        <span id="live">10</span>
+                    </div>
+                </p>
+            </div>
+            <canvas id="canvas"></canvas>
+            <audio id="bgMusic" src="bg_music.mp3" loop></audio>
+        </div>
+        <button id="reset">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
